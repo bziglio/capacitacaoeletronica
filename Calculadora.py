@@ -33,16 +33,51 @@ def potencia():
     print('')
     print(num1**num2)
 
-def raiz_quadrada():
-    num = int(input("Digite o número. "))
+def soma():
+    num1 = float(input("Digite o seu primeiro número. "))
+    num2 = float(input("Digite o seu segundo número. "))
     print('')
-    print(num**0.5)
+    print(str(num1) + ' + ' + str(num2) + ' = ' + str(num1 + num2))
+
+def subtracao():
+    num1 = float(input("Digite o seu primeiro número. "))
+    num2 = float(input("Digite o seu segundo número. "))
+    print('')
+    print(str(num1) + ' - ' + str(num2) + ' = ' + str(num1 - num2))
+
+def multiplicacao():
+    num1 = float(input("Digite o seu primeiro número. "))
+    num2 = float(input("Digite o seu segundo número. "))
+    print('')
+    print(str(num1) + ' . ' + str(num2) + ' = ' + str(num1 * num2))
+
+def divisao():
+    num1 = float(input("Digite o seu primeiro número. "))
+    num2 = float(input("Digite o seu segundo número. "))
+    print('')
+    print(str(num1) + ' / ' + str(num2) + ' = ' + str(num1 / num2))
+
+def quadrado():
+    num = float(input("Digite o seu número. "))
+    print('')
+    print(str(num) + ' ^2 = ' + str(num ** 2))
+
+def potencia():
+    num1 = float(input("Digite o número. "))
+    num2 = float(input("Digite a potência. "))
+    print('')
+    print(str(num1) + ' ^' + str(num2) + ' = ' + str(num1 ** num2))
+
+def raiz_quadrada():
+    num = float(input("Digite o número. "))
+    print('')
+    print(str(num) + ' ^0.5  = ' + str(num ** 0.5))
 
 def raiz():
-    num1 = int(input("Digite o número. "))
-    num2 = int(input("Digite a raíz. "))
+    num1 = float(input("Digite o número. "))
+    num2 = float(input("Digite a raíz. "))
     print('')
-    print(num1**(1/num2))
+    print(str(num1) + ' ^' + str(1/num2) + ' = ' + str(num1 ** (1/num2)))
 
 def fatorial():
     num = int(input("Digite o número. "))
@@ -50,30 +85,17 @@ def fatorial():
     for i in range(1, num+1):
         x = x*i
     print('')
-    print(x)
+    print(str(num) + '! = ' + str(x))
 
 
-def funcoes():
-    print('')
-    print('')
-    print('0 - Desligar a calculadora')
-    print('1 - Soma')
-    print('2 - Subtração')
-    print('3 - Multiplicação')
-    print('4 - Divisão')
-    print('5 - Quadrado')
-    print('6 - Potência')
-    print('7 - Raíz Quadrada')
-    print('8 - Raíz')
-    print('9 - Fatorial')
-    print('')
 
 
 if __name__== "__main__":
 
     operacao = 0
     while operacao != '0':
-        funcoes()
+        print('\n\n0 - Desligar a calculadora \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão')
+        print('5 - Quadrado \n6 - Potência \n7 - Raíz Quadrada \n8 - Raíz \n9 - Fatorial \n\n')
         operacao = input('Qual operação quer realizar? ')
         
         if operacao == '1':
